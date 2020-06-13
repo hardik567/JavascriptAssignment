@@ -1,0 +1,15 @@
+let sort = (num) => {
+    let tmp = [];
+    for(i=0; i < num; i++){
+        for(j =0 ; j < num; j++){
+            if(num[j]>num[j+1]){
+                tmp = num[j];
+                num[j] = num[j+1]
+                num[j+1] = tmp
+            }
+        }
+    }
+    return num;
+}
+let numbers = [5,2,1,4,3]
+console.log(sort(numbers));
