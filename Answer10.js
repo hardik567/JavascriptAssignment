@@ -1,7 +1,7 @@
 let sort = (num) => {
     let tmp = [];
-    for(i=0; i < num; i++){
-        for(j =0 ; j < num; j++){
+    for(i=0;i < num.length; i++){
+        for(j =0 ; j < num.length; j++){
             if(num[j]>num[j+1]){
                 tmp = num[j];
                 num[j] = num[j+1]
@@ -12,4 +12,4 @@ let sort = (num) => {
     return num;
 }
 let numbers = [5,2,1,4,3]
-console.log(sort(numbers));
+console.log(sort(numbers))
